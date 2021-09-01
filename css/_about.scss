@@ -1,0 +1,102 @@
+.hero{
+    background-image: url();height: 60vh;background-position: center;background-size: cover;text-align: center;position: relative;
+    .overlay{
+        position: absolute;width: 100%;height: 100%;top: 0;left: 0;background-color: rgb(0, 0, 0);opacity: .4;;
+    }
+
+    h1{font-size: 40px;font-weight: bold;color: white;z-index: 10;position: absolute;text-align: center;top: 130px;}
+
+    p{
+        background-color: #E53D35;width: 240px;height: 50px;@include center;position: absolute;z-index: 10;bottom: 0px;color: white;font-size: 20px;clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+        a{height: 50px;@include center;color: white;font-size: 20px;margin-right: 10px;}
+    }
+}
+
+.company{
+    
+    .inner{
+        padding: 20px;
+        h3{
+            height: 60px;@include center;font-size: 30px;font-weight: bold;
+            img{margin-right: 10px;}
+        }
+        p{
+            display: flex;text-align: left;
+            span{font-weight: bold;width: 120px;margin-right: 10px;}
+        }
+    }
+}
+
+.mission{
+    .inner{
+        text-align: center;
+        h3{
+            height: 60px;@include center;font-size: 30px;font-weight: bold;
+            img{margin-right: 10px;width: 52px;height: 59px;}
+        }
+        p{padding: 10px;}
+
+        img{
+            width: 250px;height: 160px;object-fit: cover;padding: 10px;border-radius: 18px;
+        }
+
+    }
+}
+
+@media (min-width: 568px){
+    .hero{
+        height: 80vh;
+        h1{top: 50px;}
+    }
+
+    .mission{
+        .inner{
+         position: relative;
+      .img-center{
+          position: absolute;bottom: -170px;left: 50%;transform: translate(-50%, -50%);
+        }
+        }
+    }
+    
+
+    
+}
+
+@media (min-width: 1024px){
+    .hero{
+        h1{top: 150px;}
+        
+            .nav{
+                display: list-item;
+            }
+        
+    }
+
+    .company{
+        display: flex;
+        .inner{
+            padding: 10px;width: 50%;text-align:left;
+            p{
+                display: flex;text-align: left;padding: 0 0 0 33px;font-size: 20px;
+                span{font-weight: bold;width: 120px;margin-right: 10px;}
+            }
+        }
+    }
+
+    .mission{
+        display: flex;margin-top: 60px;;
+        .inner{
+         width: 50%;text-align: left;
+      p{font-size: 22px;}
+        }
+        #images{
+            display: flex;flex-wrap: wrap;padding-left: 120px;
+            img{width: 370px;height: 220px;}
+            .img-center{
+                position: absolute;bottom: -10px;left: 28%;width: 320px;height: 220px;;
+              }
+        }
+    }
+    
+    
+}

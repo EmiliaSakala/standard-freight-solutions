@@ -1,0 +1,205 @@
+footer{
+    display: flex;position: relative;flex-wrap: wrap;
+    .log{
+        position: relative;background-color: #E53C35;width: 100%;height: 400px;box-shadow: #E53C35 25px 0px 4px;clip-path: polygon(0 0, 0 100%, 100% 99%, 100% 16%, 91% 0);
+       
+        #footerlogo{
+            height: 90px;width: 300px;
+        }
+       .call{
+           color: white;font-size: 23px;font-weight: bold;text-transform: uppercase;box-shadow: black 3px 3px 6px;width: 180px;height: 50px;@include center;position: absolute;bottom: 70px;left: 50%;transform: translate(-50%, 50%);
+       }
+    }
+
+
+    .link{
+        background-color: #272323;width: 100%;height: 300px;text-align: center;padding-top: 35px;position: relative;
+        a{
+            display: block;color: white;font-size: 20px;padding: 5px;
+        }
+        h3{color: white;font-size: 25px;font-weight: bold;@include center;text-transform: uppercase;padding-bottom: 25px;}
+     
+    }
+
+    .contactus{
+        background-color: #272323;width: 100%;height: 370px;padding-top: 30px;
+        p{
+            color: white;display: flex;padding: 10px;width: 100%;font-size: 18px;align-items: center;
+            img{width: 50px;height: 50px;}   
+        }
+        h3{font-size: 25px;color: white;@include center;font-weight: bold;}
+        #phone{width: 250px;}
+    }
+
+    .copy{
+        position: absolute;width: 87%;height: 70px;right: 0;bottom: 0;background-color: black;display: flex;z-index: 5;;
+        a{margin-left: -35px;width: 133px;height: 70px;background-color: #373737;@include center;clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)}
+        p{color: white;margin-left: auto;padding-right: 49px;display: flex;align-items: center;font-size: 12px;}
+    }
+
+    .kun{
+        position: absolute;color: white;font-size: 22px;width: 100% ;text-align: center;top: 115px;
+    }
+    .kuna{
+        position: absolute;top: 220px;width: 100%;@include center;
+        img{padding: 4px;}
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 375px){
+   
+      
+}
+@media (min-width: 568px){
+    footer{
+        .log{
+            width: 50%;height: 300px;text-align: center;
+           
+            #footerlogo{
+                height: 60px;width: 200px;
+            }
+           .call{
+               font-size: 15px;font-weight: bold;width: 180px;height: 50px;@include center;position: absolute;bottom: 70px;left: 50%;transform: translate(-50%, 50%);
+           }
+        }
+    
+    
+        .link{
+            width: 50%;height: 300px;padding-top: 20px;
+            a{
+                display: block;color: white;font-size: 20px;padding: 5px;
+            }
+            h3{color: white;font-size: 25px;font-weight: bold;@include center;text-transform: uppercase;padding-bottom: 25px;}
+         
+        }
+    
+        .contactus{
+            background-color: #272323;width: 100%;height: 370px;padding-top: 30px;
+            p{
+                color: white;display: flex;padding: 10px;width: 100%;font-size: 18px;align-items: center;
+                img{width: 50px;height: 50px;}   
+            }
+            h3{font-size: 25px;color: white;@include center;font-weight: bold;}
+            #phone{width: 250px;}
+        }
+    
+        .copy{
+            position: absolute;width: 87%;height: 70px;right: 0;bottom: 0;background-color: black;display: flex;z-index: 5;;
+            a{margin-left: -35px;width: 133px;height: 70px;background-color: #373737;@include center;clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)}
+            p{color: white;margin-left: auto;padding-right: 49px;display: flex;align-items: center;font-size: 12px;}
+        }
+    
+        .kun{
+            font-size: 16px;width: 50% ;top: 80px;
+        }
+        .kuna{
+            top: 140px;width: 50%;@include center;
+            img{padding: 4px;}
+        }
+    }
+}
+@media (min-width: 768px){}
+@media (min-width: 1024px){
+    footer{
+        flex-wrap: nowrap;
+        .log{
+            width: 400px;height: 430px;
+            #footerlogo{
+                width: 250px;
+            }
+           .call{
+               font-size: 20px;width: 170px;height: 40px;bottom: 120px;
+           }
+        }
+    
+        .link{
+            width: 60%;height: 400px;margin: 30px 0 0 -80px;clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);padding-top: 35px;z-index: 2;
+            a{
+                font-size: 20px;padding: 5px;
+            }
+          
+         
+        }
+    
+        .contactus{
+               width: 40%;height: 345px;clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);margin-left: -200px;padding: 65px 80px 80px 10px;z-index: 99;;
+            p{
+                font-size: 23px;margin-left: 40px;   
+            }
+        }
+    
+        .copy{
+            z-index: 100;;width: 87%;height: 87px;right: 0;bottom: 0;background-color: black;display: flex;z-index: 5;;
+            a{margin-left: -35px;width: 133px;height: 87px;background-color: #373737;@include center;clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)}
+            p{color: white;margin-left: auto;padding-right: 49px;display: flex;align-items: center;}
+        }
+    
+        .kun{
+            font-size: 22px;width: 390px;top: 130px;left: 50px;z-index: 9;;
+        }
+        .kuna{
+            top: 220px;left: -90px;z-index: 9;@include center;
+            img{padding: 4px;}
+        }
+    }
+}
+
+@media (min-width: 1200px){
+
+    footer{
+        display: flex;position: relative;;
+        .log{
+            position: relative;;background-color: #E53C35;width: 500px;height: 450px;box-shadow: #E53C35 25px 0px 4px;clip-path: polygon(0 0, 0 100%, 100% 99%, 100% 16%, 91% 0);
+            .int{color: white;font-size: 22px;position: absolute;left: 90px;width: 100%;z-index: 99;
+             span{display: block;}
+            }
+            #footerlogo{
+                height: 90px;width: 300px;
+            }
+           .call{
+               color: white;font-size: 23px;font-weight: bold;text-transform: uppercase;box-shadow: black 3px 3px 6px;width: 180px;height: 50px;@include center;position: absolute;bottom: 130px;left: 200px;
+           }
+        }
+    
+        .link{
+            background-color: #272323;width: 60%;height: 400px;margin: 30px 0 0 -100px;clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);text-align: center;padding-top: 35px;z-index: 2;position: relative;;
+            a{
+                display: block;color: white;font-size: 20px;padding: 5px;
+            }
+            h3{color: white;font-size: 25px;font-weight: bold;@include center;text-transform: uppercase;padding-bottom: 25px;}
+         
+        }
+    
+        .contactus{
+            background-color: #272323;width: 50%;height: 400px;clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);margin-left: -200px;padding: 65px 80px 80px 110px;
+            p{
+                color: white;display: flex;align-items: center;padding: 10px;width: 330px;font-size: 23px;margin-left: 90px;
+                img{width: 50px;height: 50px;}   
+            }
+            h3{font-size: 25px;color: white;@include center;font-weight: bold;}
+            #phone{width: 250px;}
+        }
+    
+        .copy{
+            position: absolute;width: 87%;height: 87px;right: 0;bottom: 0;background-color: black;display: flex;z-index: 5;;
+            a{margin-left: -35px;width: 133px;height: 87px;background-color: #373737;@include center;clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)}
+            p{color: white;margin-left: auto;padding-right: 49px;display: flex;align-items: center;}
+        }
+    
+        .kun{
+            position: absolute;color: white;font-size: 22px;width: 390px;top: 150px;left: 90px;z-index: 9;;
+        }
+        .kuna{
+            position: absolute;top: 230px;left: -130px;z-index: 9;@include center;
+            img{padding: 4px;}
+        }
+    }
+    
+    
+}

@@ -1,0 +1,66 @@
+.services{
+    background-color: #F5F5F5;@include section;
+    .container{
+        h2{
+            height: 50px;width: 100%;display: flex;align-items: center;justify-content: center;font-size: 20px;font-weight: bold;padding-bottom: 25px;
+            img{width: 50px;height: 50px;}
+            
+        }
+
+       .main{
+          @include center;
+          .inner{
+              .image{
+                position: relative;padding-bottom: 25px;width: 100%;height: 210px;;
+                .icon{
+                    position: absolute;clip-path: polygon(0 0, 76% 0, 100% 100%, 0% 100%);bottom: 0;left: 0;background-color: white;width: 80px;height: 80px;display: flex;align-items: center;padding-left: 15px;
+                    img{width: 35px;}
+                    #ground{width: 50px;padding-left: 5px;}
+              }
+              }
+            
+              h3{padding: 10px 0 0 6px;font-weight: bold;}
+              p{padding: 15px 0 0 6px;}
+             
+          }
+       }
+    }
+}
+
+
+
+@media (min-width: 568px){
+    .services{
+ .container{    
+           .main{
+              .inner{
+                  text-align: center;
+                 
+              }
+           }
+        }
+    }
+    
+}
+
+@media (min-width: 768px){
+    .services{
+        .container{    
+                  .main{
+                      display: flex;justify-content: space-between;
+                     .inner{
+                         text-align: left;width: 30%;
+                     }
+                  }
+               }
+           }
+           
+}
+
+@media (min-width: 1200px){
+    .services{
+        .container{
+            h2{font-size: 30px;}
+        }
+    }
+}
